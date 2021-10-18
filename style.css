@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: orange;
+    height: 2000px;
+}
+
+.conteudo-esquerda {
+    display: flex;
+}
+
+.header {
+    position: sticky;
+
+    top: 0;
+}
+
+.nav-bar {
+    height: 62px;
+    display: flex;
+    background-color: #fafafa;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-menu {
+    display: flex;
+}
+.logo img {
+    margin-left: 43px;
+    margin-top: 5px;
+    height: 65px;
+}
+
+.container-li {
+    margin-left: 27px;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.li-tamanho {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 13pt;
+    font-family: helvetica;
+    font-weight: 600;
+    color: rgb(34, 33, 33);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.li-tamanho:hover .triangulo {
+    transform: translateY(4px) rotate(225deg);
+}
+
+.triangulo {
+    border-bottom: 3px solid rgb(48, 47, 47);
+    border-right: 3px solid rgb(48, 47, 47);
+    margin: 0 0 5px 15px;
+    height: 7px;
+    width: 7px;
+    border-bottom-right-radius: 3px;
+    transform: rotate(45deg);
+    transition: 0.2s;
+    z-index: 0;
+}
+
+.bolinha {
+    position: absolute;
+    bottom: 15px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    z-index: 0;
+}
+
+.login {
+    font-size: 15pt;
+    margin-right: 50px;
+}
+
+.cartao {
+    height: 0;
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.cartao.animacao {
+    height: 200px;
+}
+
+.p {
+    position: absolute;
+    margin-top: 0px;
+    transition: 0.5s ease-in-out;
+}
+
+.p.animacao {
+    margin-top: 100px;
+}
